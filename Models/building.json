@@ -6,31 +6,14 @@
   "contents": [
     {
       "@type": "Property",
-      "name": "rooms",
-      "writable": true,
-      "schema": {
-        "@type": "Map",
-        "mapKey": {
-          "name": "roomname",
-          "schema": "string"
-        },
-        "mapValue": {
-          "name": "roomtemperature",
-          "schema": "float"
-        }
-      }
+      "name": "name",
+      "schema": "string"
     },
+
     {
       "@type": "Relationship",
       "name": "contains",
-      "target": "dtmi:com:smartbuilding:Floor;1",
-      "properties": [
-        {
-          "@type": "Property",
-          "name": "level",
-          "schema": "integer"
-        }
-      ]
+      "target": "dtmi:com:smartbuilding:Floor;1"
     },
     {
       "@type": "Relationship",
