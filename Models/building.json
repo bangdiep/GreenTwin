@@ -13,7 +13,14 @@
     {
       "@type": "Relationship",
       "name": "contains",
-      "target": "dtmi:com:smartbuilding:Floor;1"
+      "target": "dtmi:com:smartbuilding:Floor;1",
+      "properties": [
+        {
+          "@type": "Property",
+          "name": "level",
+          "schema": "integer"
+        }
+      ]
     },
     {
       "@type": "Relationship",
