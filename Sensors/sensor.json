@@ -2,5 +2,22 @@
   "@id": "dtmi:com:smartbuilding:Sensor;1",
   "@type": "Interface",
   "@context": "dtmi:dtdl:context;2",
-  "displayName": "Sensor"
+  "displayName": "Sensor Device",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "deviceId",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "sensorType",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "value",
+      "schema": "double"
+    }
+  ]
 }

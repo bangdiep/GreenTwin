@@ -2,5 +2,58 @@
   "@id": "dtmi:com:smartbuilding:Room;1",
   "@type": "Interface",
   "@context": "dtmi:dtdl:context;2",
-  "displayName": "Room"
+  "displayName": "Room",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "double",
+      "displayName": "Temperature (C)"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "humidity",
+      "schema": "double",
+      "displayName": "Humidity (%)"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "lux",
+      "schema": "double",
+      "displayName": "Light level (lux)"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "motion",
+      "schema": "boolean",
+      "displayName": "Motion detected"
+    },
+    {
+      "@type": "Property",
+      "name": "occupied",
+      "schema": "boolean",
+      "writable": true,
+      "displayName": "Occupied"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasLight",
+      "target": "dtmi:com:smartbuilding:Light;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasAC",
+      "target": "dtmi:com:smartbuilding:AirConditioner;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "monitoredBy",
+      "target": "dtmi:com:smartbuilding:Sensor;1"
+    },
+    {
+      "@type": "Component",
+      "name": "sensors",
+      "schema": "dtmi:com:smartbuilding:SensorsComponent;1"
+    }
+  ]
 }

@@ -1,0 +1,25 @@
+{
+  "@id": "dtmi:com:smartbuilding:Light;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Light",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "lightState",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "level",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "name": "power",
+      "schema": "double"
+    }
+  ]
+}

@@ -6,20 +6,18 @@
   "contents": [
     {
       "@type": "Property",
-      "name": "floornumber",
-      "schema": "integer",
-      "writable": false
-    },
-    {
-      "@type": "Property",
-      "name": "lightson",
-      "schema": "boolean",
-      "writable": true
+      "name": "floorNumber",
+      "schema": "integer"
     },
     {
       "@type": "Relationship",
       "name": "contains",
       "target": "dtmi:com:smartbuilding:Room;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "locatedIn",
+      "target": "dtmi:com:smartbuilding:Building;1"
     }
   ]
 }

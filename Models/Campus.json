@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:com:smartbuilding:Campus;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Campus",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "name",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "address",
+      "schema": "string"
+    },
+    {
+      "@type": "Relationship",
+      "name": "contains",
+      "target": "dtmi:com:smartbuilding:Building;1"
+    }
+  ]
+}

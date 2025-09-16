@@ -1,0 +1,25 @@
+{
+  "@id": "dtmi:com:smartbuilding:AirConditioner;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Air Conditioner",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "acState",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "setPoint",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Telemetry",
+      "name": "power",
+      "schema": "double"
+    }
+  ]
+}

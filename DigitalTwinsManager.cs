@@ -190,24 +190,28 @@ namespace SmartBuildingConsoleApp.DigitalTwins
         #endregion
 
         #region Relationships
+        //Tạo id duy nhất cho một relationship
         public string RelationshipId(string twinSourceId, string twinDestinationId)
         {
-            return string.Format("{0}-{1}", twinSourceId, twinDestinationId);
+            return string.Format("{0}-{1}", twinSourceId, twinDestinationId);  //Building1-Floor1
         }
 
+        //Tạo hoặc thay thế mối quan hệ giữa hai Digital Twins
         public void CreateRelationship(string twinSourceId, string twinDestinationId, string description, Dictionary<string, object> properties = null)
         {
             string relationShipId = RelationshipId(twinSourceId, twinDestinationId);
 
+            //tạo đối tượng relationship
             BasicRelationship relationship = new BasicRelationship
             {
-                Id = "buildingFloorRelationshipId",
+                Id = relationShipId,
                 SourceId = twinSourceId,
                 TargetId = twinDestinationId,
                 Name = description,
                 Properties = properties
             };
-
+            //Nếu quan hệ đã tồn tại thì ghi đè (replace).
+            //Nếu chưa có thì tạo mới.
             try
             {
                 client.CreateOrReplaceRelationship(twinSourceId, relationShipId, relationship);

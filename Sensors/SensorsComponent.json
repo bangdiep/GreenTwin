@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:com:smartbuilding:SensorsComponent;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Sensors Component",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "humidity",
+      "schema": "double"
+    },
+    { 
+      "@type": "Telemetry",
+      "name": "lux",  
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "motion",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "deviceId",
+      "schema": "string"
+    }
+  ]
+}
