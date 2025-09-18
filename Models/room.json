@@ -42,6 +42,11 @@
     },
     {
       "@type": "Relationship",
+      "name": "locatedIn",
+      "target": "dtmi:com:smartbuilding:Floor;1"
+    },
+    {
+      "@type": "Relationship",
       "name": "hasAC",
       "target": "dtmi:com:smartbuilding:AirConditioner;1"
     },

@@ -7,7 +7,7 @@
   "contents": [
     {
       "@type": "Property",
-      "name": "occupied",
+      "name": "meetingoccupied",
       "schema": "boolean",
       "writable": true
     },
@@ -19,7 +19,7 @@
     },
     {
       "@type": "Telemetry",
-      "name": "temperature",
+      "name": "meetingtemperature",
       "schema": "double"
     }
   ]
